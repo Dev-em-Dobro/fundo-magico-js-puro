@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #18181b;
+	color: #000;
+	font-family: "Inter", Arial, sans-serif;
+	margin: 0;
+	min-height: 100vh;
+	background: #eeaeca;
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.title {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+.card,
+.code-section {
+	background: rgba(255, 255, 255, 0.07);
+	border-radius: 1.2rem;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	padding: 2em;
+	margin-bottom: 2em;
+	backdrop-filter: blur(6px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.label {
+	display: block;
+	font-size: 1.1rem;
+	margin-bottom: 0.7em;
+}
+
+.input {
+	width: 100%;
+	padding: 1em;
+	border-radius: 0.5em;
+	border: 1px solid #fff3;
+	background: rgba(255, 255, 255, 0.15);
+	font-size: 1.1rem;
+	margin-bottom: 1.2em;
+}
+
+.input:disabled {
+	opacity: 0.7;
+}
+
+.btn {
+	width: 100%;
+	padding: 1em;
+	border-radius: 0.5em;
+	border: none;
+	background: linear-gradient(90deg, #a259ff 0%, #f24e1e 100%);
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.btn:hover {
+	background: linear-gradient(90deg, rgba(148, 91, 223, 0.384) 0%, #da785a 90%);
+}
+
+.preview-area {
+	display: none;
+}
+
+.code-section {
+	border-radius: 1em;
+	padding: 1.5em;
+	margin-bottom: 2em;
+}
+
+.code-section h2 {
+	font-size: 1.2em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+.code {
+	background: #3c3c3c;
+	color: #22d3ee;
+	padding: 1em;
+	border-radius: 0.5em;
+	font-family: "Fira Mono", "Consolas", monospace;
+	font-size: 1em;
+	text-align: left;
+	overflow-x: auto;
+	height: 100px;
+}
+
+.toast {
+	position: fixed;
+	top: 2em;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #18181b;
+	color: #fff;
+	padding: 1em 2em;
+	border-radius: 0.7em;
+	box-shadow: 0 2px 16px #0005;
+	z-index: 9999;
+	font-size: 1.1em;
+	opacity: 0.97;
+	pointer-events: none;
+}
+.toast-error {
+	background: #dc2626;
+	color: #fff;
+}
+.toast-success {
+	background: #22c55e;
+	color: #fff;
+}
