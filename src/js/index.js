@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		setLoading(true);
 
 		try {
-			const response = await fetch("https://n8n.srv830193.hstgr.cloud/webhook-test/4096b767-f3fb-4244-bb3c-2df7994c2262", {
+			const response = await fetch("https://n8n.srv830193.hstgr.cloud/webhook/4096b767-f3fb-4244-bb3c-2df7994c2262", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ description }),
 			});
-			
+
 			const data = await response.json();
 
 			htmlCode.textContent = data.code || "";
